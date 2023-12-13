@@ -1,0 +1,29 @@
+/* styles.css or Hero.css or wherever you manage your styles */
+@keyframes flickerAnimation {
+  0%,
+  100% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes appearMoveAnimation {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-flicker {
+  animation: flickerAnimation 1s infinite;
+}
+
+.animate-appear-move {
+  animation: appearMoveAnimation 1s forwards;
+}
